@@ -1,4 +1,4 @@
-package com.cerner.DevCenter.ToDoList;
+package com.ritesh.practice.ToDoList;
 /*
  * @This is a POJO 
  */

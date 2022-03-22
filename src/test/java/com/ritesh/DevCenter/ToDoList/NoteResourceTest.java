@@ -1,7 +1,7 @@
 /**
  * @author RK078086
  */
-package com.cerner.DevCenter.ToDoList;
+package com.ritesh.practice.ToDoList;
 
 import static org.mockito.Mockito.when;
 
@@ -13,6 +13,9 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.anyInt;
 
+import com.ritesh.practice.ToDoList.Note;
+import com.ritesh.practice.ToDoList.NoteRepository;
+import com.ritesh.practice.ToDoList.NoteResource;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
@@ -26,7 +29,7 @@ class NoteResourceTest {
 	NoteResource noteResource;
 
 	@Mock
-	NoteRepository noteRepository;
+    NoteRepository noteRepository;
 
 	/**
 	 * @throws java.lang.Exception
@@ -38,7 +41,7 @@ class NoteResourceTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteResource#getNotes()}.
+	 * {@link NoteResource#getNotes()}.
 	 */
 	@Test
 	void testGetNotes() {
@@ -62,7 +65,7 @@ class NoteResourceTest {
 	
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteResource#getCompleteNotes()}.
+	 * {@link NoteResource#getCompleteNotes()}.
 	 */
 
 	@Test
@@ -86,7 +89,7 @@ class NoteResourceTest {
 	}
 
 	/**
-	 * Test method for {@link com.cerner.DevCenter.ToDoList.NoteResource#getNotes()
+	 * Test method for {@link NoteResource#getNotes()
 	 * for null pointer exception}.
 	 */
 
@@ -105,7 +108,7 @@ class NoteResourceTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteResource#getNote(int)}.
+	 * {@link NoteResource#getNote(int)}.
 	 * 
 	 * @throws Exception
 	 */
@@ -134,7 +137,7 @@ class NoteResourceTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteResource#getNote(int) for null
+	 * {@link NoteResource#getNote(int) for null
 	 * pointer exception}.
 	 * 
 	 * @throws Exception
@@ -155,7 +158,7 @@ class NoteResourceTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteResource#AddNote(Note)}.
+	 * {@link NoteResource#AddNote(Note)}.
 	 * 
 	 */
 
@@ -188,7 +191,7 @@ class NoteResourceTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteResource#UpdateStatus(Note)}.
+	 * {@link NoteResource#UpdateStatus(Note)}.
 	 * 
 	 */
 
@@ -215,7 +218,7 @@ class NoteResourceTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteResource#NoteModify(Note)}.
+	 * {@link NoteResource#NoteModify(Note)}.
 	 * 
 	 */
 
@@ -242,7 +245,7 @@ class NoteResourceTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteResource#VirtualDelete(Note)}.
+	 * {@link NoteResource#VirtualDelete(Note)}.
 	 * 
 	 */
 

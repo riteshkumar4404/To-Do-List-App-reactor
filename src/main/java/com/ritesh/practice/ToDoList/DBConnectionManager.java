@@ -1,4 +1,4 @@
-package com.cerner.DevCenter.ToDoList;
+package com.ritesh.practice.ToDoList;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -25,7 +25,7 @@ public class DBConnectionManager {
 		Connection conn = null;
 		String url = "jdbc:mysql://localhost:3306/todoapp?autoReconnect=true&useSSL=false";
 		String username = "root";
-		String password = "TULAnand1408@";
+		String password = "********;
 
 		try {
 			conn = DriverManager.getConnection(url, username, password);

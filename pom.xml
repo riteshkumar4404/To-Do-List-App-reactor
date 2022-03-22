@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.cerner.DevCenter</groupId>
+	<groupId>com.ritesh.practice</groupId>
 	<artifactId>ToDoList</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.0-SNAPSHOT</version>

@@ -1,4 +1,4 @@
-package com.cerner.DevCenter.ToDoList;
+package com.ritesh.practice.ToDoList;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

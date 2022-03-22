@@ -1,7 +1,7 @@
 /**
  * @author RK078086
  */
-package com.cerner.DevCenter.ToDoList;
+package com.ritesh.practice.ToDoList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -16,6 +16,9 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import com.ritesh.practice.ToDoList.DBConnectionManager;
+import com.ritesh.practice.ToDoList.Note;
+import com.ritesh.practice.ToDoList.NoteRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -29,7 +32,7 @@ class NoteRepositoryTest {
 	NoteRepository noteRepository;
 
 	@Mock
-	DBConnectionManager DBC;
+    DBConnectionManager DBC;
 
 	@Mock
 	public Connection mockConnection;
@@ -72,7 +75,7 @@ class NoteRepositoryTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteRepository#getNotes()}.
+	 * {@link NoteRepository#getNotes()}.
 	 * 
 	 * @throws SQLException
 	 */
@@ -109,7 +112,7 @@ class NoteRepositoryTest {
 	
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteRepository#getCompleteNotes()}.
+	 * {@link NoteRepository#getCompleteNotes()}.
 	 * 
 	 * @throws SQLException
 	 */
@@ -146,7 +149,7 @@ class NoteRepositoryTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteRepository#getNoteById(int)}.
+	 * {@link NoteRepository#getNoteById(int)}.
 	 * 
 	 * @throws SQLException
 	 */
@@ -179,7 +182,7 @@ class NoteRepositoryTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteRepository#ComleteNoteStatus(Note)}.
+	 * {@link NoteRepository#ComleteNoteStatus(Note)}.
 	 * 
 	 * @throws SQLException
 	 */
@@ -197,7 +200,7 @@ class NoteRepositoryTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteRepository#updateDeleted(Note)}.
+	 * {@link NoteRepository#updateDeleted(Note)}.
 	 * 
 	 * @throws SQLException
 	 */
@@ -215,7 +218,7 @@ class NoteRepositoryTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteRepository#addNoted(Note)}.
+	 * {@link NoteRepository#addNoted(Note)}.
 	 * 
 	 * @throws SQLException
 	 */
@@ -238,7 +241,7 @@ class NoteRepositoryTest {
 
 	/**
 	 * Test method for
-	 * {@link com.cerner.DevCenter.ToDoList.NoteRepository#noteModify(Note)}.
+	 * {@link NoteRepository#noteModify(Note)}.
 	 * 
 	 * @throws SQLException
 	 */
