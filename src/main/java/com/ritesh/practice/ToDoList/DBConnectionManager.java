@@ -25,7 +25,7 @@ public class DBConnectionManager {
 		Connection conn = null;
 		String url = "jdbc:mysql://localhost:3306/todoapp?autoReconnect=true&useSSL=false";
 		String username = "root";
-		String password = "********;
+		String password = "********";
 
 		try {
 			conn = DriverManager.getConnection(url, username, password);
